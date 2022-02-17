@@ -53,8 +53,8 @@ namespace API.Data
                     Description = "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
                     Price = 15000,
                     PictureUrl = "/images/products/kylian_mbappe_km3002km.png",
-                    Player = "Poster",
-                    Type = "Mbappe",
+                    Player = "Mbappe",
+                    Type = "Poster",
                     QuantityInStock = 100
                 },
                 new Product

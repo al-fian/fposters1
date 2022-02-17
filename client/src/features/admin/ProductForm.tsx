@@ -23,7 +23,7 @@ export default function ProductForm({ product, cancelEdit }: Props) {
         mode: 'all',
         resolver: yupResolver<any>(validationSchema)
     });
-    const { brands, types } = useProducts();
+    const { players, types } = useProducts();
     const watchFile = watch('file', null);
     const dispatch = useAppDispatch();
 
@@ -60,7 +60,7 @@ export default function ProductForm({ product, cancelEdit }: Props) {
                         <AppTextInput control={control} name='name' label='Product name' />
                     </Grid>
                     <Grid item xs={12} sm={6}>
-                        <AppSelectList items={brands} control={control} name='brand' label='Brand' />
+                        <AppSelectList items={players} control={control} name='brand' label='Brand' />
                     </Grid>
                     <Grid item xs={12} sm={6}>
                         <AppSelectList items={types} control={control} name='type' label='Type' />

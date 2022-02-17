@@ -54,7 +54,7 @@ export default function Inventory() {
                             <TableCell align="left">Product</TableCell>
                             <TableCell align="right">Price</TableCell>
                             <TableCell align="center">Type</TableCell>
-                            <TableCell align="center">Brand</TableCell>
+                            <TableCell align="center">Player</TableCell>
                             <TableCell align="center">Quantity</TableCell>
                             <TableCell align="right"></TableCell>
                         </TableRow>
@@ -76,7 +76,7 @@ export default function Inventory() {
                                 </TableCell>
                                 <TableCell align="right">{currencyFormat(product.price)}</TableCell>
                                 <TableCell align="center">{product.type}</TableCell>
-                                <TableCell align="center">{product.brand}</TableCell>
+                                <TableCell align="center">{product.player}</TableCell>
                                 <TableCell align="center">{product.quantityInStock}</TableCell>
                                 <TableCell align="right">
                                     <Button onClick={() => handleSelectProduct(product)} startIcon={<Edit />} />

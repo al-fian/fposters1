@@ -8,7 +8,7 @@ interface CatalogState {
     productsLoaded: boolean;
     filtersLoaded: boolean;
     status: string;
-    brands: string[];
+    players: string[];
     types: string[];
     productParams: ProductParams;
     metaData: MetaData | null;
@@ -22,7 +22,7 @@ function getAxiosParams(productParams: ProductParams) {
     params.append('pageSize', productParams.pageSize.toString());
     params.append('orderBy', productParams.orderBy);
     if (productParams.searchTerm) params.append('searchTerm', productParams.searchTerm);
-    if (productParams.brands.length > 0) params.append('brands', productParams.brands.toString());
+    if (productParams.players.length > 0) params.append('players', productParams.players.toString());
     if (productParams.types.length > 0) params.append('types', productParams.types.toString());
     return params;
 }
@@ -68,7 +68,7 @@ function initParams() {
         pageNumber: 1,
         pageSize: 6,
         orderBy: 'name',
-        brands: [],
+        players: [],
         types: []
     }
 }
@@ -79,7 +79,7 @@ export const catalogSlice = createSlice({
         productsLoaded: false,
         filtersLoaded: false,
         status: 'idle',
-        brands: [],
+        players: [],
         types: [],
         productParams: initParams(),
         metaData: null
@@ -136,7 +136,7 @@ export const catalogSlice = createSlice({
             state.status = 'pendingFetchFilters';
         });
         builder.addCase(fetchFilters.fulfilled, (state, action) => {
-            state.brands = action.payload.brands;
+            state.players = action.payload.players;
             state.types = action.payload.types;
             state.filtersLoaded = true;
             state.status = 'idle';

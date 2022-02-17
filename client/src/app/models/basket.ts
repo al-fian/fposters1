@@ -3,7 +3,7 @@ export interface BasketItem {
     name: string;
     price: number;
     pictureUrl: string;
-    brand: string;
+    player: string;
     type: string;
     quantity: number;
 }

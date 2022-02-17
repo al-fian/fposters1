@@ -5,7 +5,7 @@ export interface Product {
     price: number;
     pictureUrl: string;
     type?: string;
-    brand: string;
+    player: string;
     quantityInStock?: number;
 }
 
@@ -13,7 +13,7 @@ export interface ProductParams {
     orderBy: string;
     searchTerm?: string;
     types: string[];
-    brands: string[];
+    players: string[];
     pageNumber: number;
     pageSize: number;
 }
