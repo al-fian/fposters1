@@ -54,7 +54,7 @@ export default function Catalog() {
                 <ProductList products={products} />
             </Grid>
             <Grid item xs={3} />
-            <Grid item xs={9} sx={{mb: 2}}>
+            <Grid item xs={9} sx={{mb: 4, mt: 2}}>
                 {metaData &&
                 <AppPagination 
                     metaData={metaData}

@@ -92,7 +92,7 @@ export default function Inventory() {
                 </Table>
             </TableContainer>
             {metaData && 
-                <Box sx={{pt: 2}}>
+                <Box sx={{pt: 2, mb: 3}}>
                     <AppPagination 
                         metaData={metaData} 
                         onPageChange={(page: number) => dispatch(setPageNumber({pageNumber: page}))}

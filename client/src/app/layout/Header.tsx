@@ -1,5 +1,5 @@
 import { ShoppingCart } from "@mui/icons-material";
-import { AppBar, Badge, Box, IconButton, List, ListItem, Switch, Toolbar, Typography } from "@mui/material";
+import { AppBar, Badge, Box, IconButton, List, ListItem, Toolbar, Typography } from "@mui/material";
 import { Link, NavLink } from "react-router-dom";
 import { useAppSelector } from "../store/configureStore";
 import SignedInMenu from "./SignedInMenu";
@@ -45,7 +45,6 @@ export default function Header({ darkMode, handleThemeChange }: Props) {
                         sx={navStyles}>
                         FPosters
                     </Typography>
-                    <Switch checked={darkMode} onChange={handleThemeChange} />
                 </Box>
                 <List sx={{ display: 'flex' }}>
                     {midLinks.map(({ title, path }) => (

@@ -27,7 +27,7 @@ export default function HomePage() {
                 </div>
             </Slider>
             <Box display='flex' justifyContent='center' sx={{p: 4}} >
-                <Typography variant='h1'>Welcome to Football Posters</Typography>
+                <Typography variant='h2'>Welcome to Football Posters</Typography>
             </Box>
         </>
     )
