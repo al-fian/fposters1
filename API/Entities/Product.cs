@@ -15,5 +15,6 @@ namespace API.Entities
         public string? Type { get; set; }
         public string? Player { get; set; }
         public int QuantityInStock { get; set; }
+        public string? PublicId { get; set; }
     }
 }
