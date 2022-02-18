@@ -93,6 +93,10 @@ builder.Services.AddDbContext<StoreContext>(opt =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// added to solve this error: 
+// Cannot write DateTime with Kind=Local to PostgreSQL type 'timestamp with time zone', only UTC is supported
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+
 builder.Services.AddCors();
 builder.Services.AddIdentityCore<User>(opt =>
 {
