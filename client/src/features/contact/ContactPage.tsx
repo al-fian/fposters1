@@ -4,7 +4,7 @@ export default function ContactPage() {
 
     return (
         <Container>
-            <Typography gutterBottom variant='h2'>Famous football players.</Typography>
+            <Typography gutterBottom variant='h6'>https://www.facebook.com/al.fian000/</Typography>
         </Container>
 
     )

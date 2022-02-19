@@ -13,7 +13,25 @@ export default function AboutPage() {
 
     return (
         <Container>
-            <Typography gutterBottom variant='h2'>We sell posters and wallpapers of famous football players.</Typography>
+            <Typography gutterBottom variant='body1'>This is an e-commerce website for a demo. Developed not for its design but for its functionalities.</Typography>
+            <Typography gutterBottom variant='h6'>Technologies used:</Typography>
+            <Typography gutterBottom variant='h6'>Backend</Typography>
+            <ul>
+                <li>ASPNET Core 6</li>
+                <li>C#</li>
+                <li>PostGreSQL</li>
+                <li>Restful Web API</li>
+            </ul>
+            <Typography gutterBottom variant='h6'>Frontend</Typography>
+            <ul>
+                <li>ReactJS</li>
+                <li>Redux</li>
+                <li>Typescript</li>
+            </ul>
+            <Typography gutterBottom variant='h6'>Payment Method</Typography>
+            <ul>
+                <li>Stripe</li>
+            </ul>
         </Container>
     )
 }
